@@ -1,7 +1,6 @@
 <template>
   <div class="gradient-bg min-h-screen p-4 md:p-6">
-    <!-- 顶部导航 -->
-    <div class="glass-strong mb-6 rounded-3xl p-4 shadow-xl md:mb-8 md:p-6">
+    <!-- <div class="glass-strong mb-6 rounded-3xl p-4 shadow-xl md:mb-8 md:p-6">
       <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
         <LogoTitle
           :loading="oemLoading"
@@ -16,10 +15,10 @@
           >
             <i class="fas fa-cog text-sm" />
             <span class="text-xs font-medium md:text-sm">管理后台</span>
-          </router-link>
+          </router-link> 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Tab 切换 -->
     <div class="mb-6 md:mb-8">
@@ -124,7 +123,7 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { storeToRefs } from 'pinia'
 import { useApiStatsStore } from '@/stores/apistats'
-import LogoTitle from '@/components/common/LogoTitle.vue'
+// import LogoTitle from '@/components/common/LogoTitle.vue'
 import ApiKeyInput from '@/components/apistats/ApiKeyInput.vue'
 import StatsOverview from '@/components/apistats/StatsOverview.vue'
 import TokenDistribution from '@/components/apistats/TokenDistribution.vue'
@@ -143,11 +142,11 @@ const {
   apiId,
   loading,
   modelStatsLoading,
-  oemLoading,
+  // oemLoading,
+  // oemSettings,
   error,
   statsPeriod,
-  statsData,
-  oemSettings
+  statsData
 } = storeToRefs(apiStatsStore)
 
 const { queryStats, switchPeriod, loadStatsWithApiId, loadOemSettings, reset } = apiStatsStore

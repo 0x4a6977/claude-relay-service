@@ -24,7 +24,7 @@ Claude Relay Service 是一个功能完整的 AI API 中转服务，支持 Claud
 - **oauthHelper.js**: OAuth工具，PKCE流程实现和代理支持
 
 ### 认证和代理流程
-1. 客户端使用自建API Key（cr_前缀格式）发送请求
+1. 客户端使用自建API Key（ii前缀格式）发送请求
 2. authenticateApiKey中间件验证API Key有效性和速率限制
 3. claudeAccountService自动选择可用Claude账户
 4. 检查OAuth access token有效性，过期则自动刷新（使用代理）
@@ -126,7 +126,7 @@ npm run setup  # 自动生成密钥并创建管理员账户
 ### 常见开发问题
 1. **Redis连接失败**: 确认Redis服务运行，检查连接配置
 2. **管理员登录失败**: 检查init.json同步到Redis，运行npm run setup
-3. **API Key格式错误**: 确保使用cr_前缀格式
+3. **API Key格式错误**: 确保使用ii前缀格式
 4. **代理连接问题**: 验证SOCKS5/HTTP代理配置和认证信息
 
 ### 调试工具
@@ -174,7 +174,7 @@ npm run setup  # 自动生成密钥并创建管理员账户
 ### 重要架构决策
 - 所有敏感数据（OAuth token、refreshToken）都使用 AES 加密存储在 Redis
 - 每个 Claude 账户支持独立的代理配置，包括 SOCKS5 和 HTTP 代理
-- API Key 使用哈希存储，支持 `cr_` 前缀格式
+- API Key 使用哈希存储，支持 `ii` 前缀格式
 - 请求流程：API Key 验证 → 账户选择 → Token 刷新（如需）→ 请求转发
 - 支持流式和非流式响应，客户端断开时自动清理资源
 

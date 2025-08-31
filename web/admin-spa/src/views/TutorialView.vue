@@ -295,7 +295,7 @@
             </p>
             <div class="rounded bg-gray-100 p-2 font-mono text-sm">
               <div>{{ currentBaseUrl }}</div>
-              <div>cr_xxxxxxxxxxxxxxxxxx</div>
+              <div>iixxxxxxxxxxxxxxxxxx</div>
             </div>
             <p class="text-xs text-blue-700">
               💡 如果输出为空或显示变量名本身，说明环境变量设置失败，请重新设置。
@@ -412,7 +412,7 @@
                 </div>
               </div>
               <p class="mt-2 text-xs text-yellow-700">
-                💡 使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。
+                💡 使用与 Claude Code 相同的 API 密钥即可。
               </p>
             </div>
 
@@ -888,7 +888,7 @@
                 </div>
               </div>
               <p class="mt-2 text-xs text-yellow-700">
-                💡 使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。
+                💡 使用与 Claude Code 相同的 API 密钥即可。
               </p>
             </div>
 
@@ -1362,7 +1362,7 @@
                 </div>
               </div>
               <p class="mt-2 text-xs text-yellow-700">
-                💡 使用与 Claude Code 相同的 API 密钥即可，格式如 cr_xxxxxxxxxx。
+                💡 使用与 Claude Code 相同的 API 密钥即可。
               </p>
             </div>
 

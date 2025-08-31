@@ -22,7 +22,7 @@
             v-model="apiKey"
             class="wide-card-input w-full"
             :disabled="loading"
-            placeholder="请输入您的 API Key (cr_...)"
+            placeholder="请输入您的 API Key"
             type="password"
             @keyup.enter="queryStats"
           />

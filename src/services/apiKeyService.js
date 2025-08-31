@@ -100,7 +100,8 @@ class ApiKeyService {
   // 🔍 验证API Key
   async validateApiKey(apiKey) {
     try {
-      if (!apiKey || !apiKey.startsWith(this.prefix)) {
+      // 兼容cr_前缀格式
+      if (!apiKey || (!apiKey.startsWith(this.prefix) && !apiKey.startsWith('cr_'))) {
         return { valid: false, error: 'Invalid API key format' }
       }
 

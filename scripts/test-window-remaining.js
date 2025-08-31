@@ -3,7 +3,7 @@ const axios = require('axios')
 const BASE_URL = 'http://localhost:3312'
 
 // 你需要替换为一个有效的 API Key
-const API_KEY = 'cr_your_api_key_here'
+const API_KEY = 'your_api_key_here'
 
 async function testWindowRemaining() {
   try {
