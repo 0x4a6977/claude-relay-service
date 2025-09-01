@@ -22,7 +22,7 @@ services:
       - JWT_SECRET=${JWT_SECRET}  # 必填：至少32字符的随机字符串
       - ENCRYPTION_KEY=${ENCRYPTION_KEY}  # 必填：32字符的加密密钥
       - ADMIN_SESSION_TIMEOUT=${ADMIN_SESSION_TIMEOUT:-86400000}
-      - API_KEY_PREFIX=${API_KEY_PREFIX:-ii}
+      - API_KEY_PREFIX=${API_KEY_PREFIX:-ii@}
       
       # 👤 管理员凭据（可选）
       - ADMIN_USERNAME=${ADMIN_USERNAME:-}

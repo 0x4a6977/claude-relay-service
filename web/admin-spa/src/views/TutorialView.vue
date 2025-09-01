@@ -295,7 +295,7 @@
             </p>
             <div class="rounded bg-gray-100 p-2 font-mono text-sm">
               <div>{{ currentBaseUrl }}</div>
-              <div>iixxxxxxxxxxxxxxxxxx</div>
+              <div>xxxxxxxxxxxxxxxxxx</div>
             </div>
             <p class="text-xs text-blue-700">
               💡 如果输出为空或显示变量名本身，说明环境变量设置失败，请重新设置。
